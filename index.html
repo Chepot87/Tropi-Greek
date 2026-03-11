@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tropi Greek | Tropical flavor with a Greek twist</title>
+  <meta
+    name="description"
+    content="Tropi Greek brings tropical Puerto Rican flavor with a Greek twist. Pita wraps, quesadillas, burgers, layered nachos, frappes, margaritas, daiquiris and more."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">
+          <img
+            src="img/tropi-greek-logo.png"
+            alt="Tropi Greek logo"
+            class="logo-img"
+          />
+          <span class="logo-text">Tropi Greek</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">West Side Puerto Rico • Beach vibes • Greek fusion</p>
+
+        <h1>Tropical flavor with a Greek twist</h1>
+
+        <p class="hero-text">
+          Tropi Greek serves bold island comfort with a fresh Mediterranean touch.
+          From pita wraps and tripletas to burgers, layered nachos, frappes,
+          margaritas and daiquiris, this is beachside flavor done right.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#contact" class="btn btn-secondary">Visit Us</a>
+        </div>
+
+        <div class="hero-badges">
+          <span>Fresh wraps</span>
+          <span>Tropical drinks</span>
+          <span>Island favorites</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <p class="mini-label">Today’s vibe</p>
+          <h2>Beachy, tasty, unforgettable</h2>
+
+          <ul>
+            <li>Chicken & Steak Pita Wraps</li>
+            <li>Tripleta-inspired street flavor</li>
+            <li>Frozen frappes & cocktails</li>
+            <li>Soft tropical atmosphere</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Featured -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Customer favorites</p>
+          <h2>Featured menu picks</h2>
+          <p>A few house favorites to make people hungry on sight.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="img/pita-pollo.png"
+                alt="Chicken pita wrap from Tropi Greek"
+              />
+            </div>
+
+            <div class="food-card-body">
+              <h3>Chicken Pita Wrap</h3>
+              <p>Grilled chicken, fresh toppings, signature sauce, warm pita.</p>
+
+              <div class="card-meta">
+                <span>Wraps</span>
+                <strong>$10.99</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="img/greek-burger.png"
+                alt="Tropi Greek burger with fries"
+              />
+            </div>
+
+            <div class="food-card-body">
+              <h3>Tropi Burger</h3>
+              <p>
+                Juicy beef patty with crisp lettuce, golden fries and house flavor.
+              </p>
+
+              <div class="card-meta">
+                <span>Burgers</span>
+                <strong>$10.49</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="img/tropi-fraps.png"
+                alt="Variedad de frappes de Tropi Greek"
+              />
+            </div>
+
+            <div class="food-card-body">
+              <h3>Variedad de Frappes</h3>
+              <p>
+                Una variedad de frappes frutales y cremosos, incluyendo sabores
+                como Oreo, Nutella y más, hechos para refrescar y antojar desde el
+                primer vistazo.
+              </p>
+
+              <div class="card-meta">
+                <span>Drinks</span>
+                <strong>$5.99</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="img/tropi-nachos.png"
+                alt="Layered nachos from Tropi Greek"
+              />
+            </div>
+
+            <div class="food-card-body">
+              <h3>Layered Nachos</h3>
+              <p>
+                Layered nachos cargados de sabor, servidos con salsa roja hecha en
+                casa y un spicy kick que los lleva al próximo nivel.
+              </p>
+
+              <div class="card-meta">
+                <span>Snacks</span>
+                <strong>$11.99</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Full menu</p>
+          <h2>Something for every craving</h2>
+          <p>Browse the menu by category. Clean, simple, and effective.</p>
+        </div>
+
+        <div class="menu-tabs" id="menuTabs">
+          <button class="tab-btn active" data-category="wraps">Wraps</button>
+          <button class="tab-btn" data-category="snacks">Snacks</button>
+          <button class="tab-btn" data-category="burgers">Burgers</button>
+          <button class="tab-btn" data-category="drinks">Drinks</button>
+          <button class="tab-btn" data-category="specials">Specials</button>
+        </div>
+
+        <div class="menu-panel active" data-panel="wraps">
+          <div class="menu-list">
+            <article class="menu-item">
+              <div>
+                <h3>Chicken Pita Wrap</h3>
+                <p>Grilled chicken, lettuce, tomato, onions and house sauce.</p>
+              </div>
+              <strong>$10.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Steak Pita Wrap</h3>
+                <p>Seasoned steak, fresh vegetables and creamy garlic sauce.</p>
+              </div>
+              <strong>$12.49</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Tripleta Pita Wrap</h3>
+                <p>A Puerto Rican-inspired twist packed with bold mixed meat flavor.</p>
+              </div>
+              <strong>$13.49</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Greek Chicken Wrap</h3>
+                <p>Chicken, feta-style touch, cucumber notes and fresh herb sauce.</p>
+              </div>
+              <strong>$11.99</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="snacks">
+          <div class="menu-list">
+            <article class="menu-item">
+              <div>
+                <h3>Quesadilla</h3>
+                <p>Golden grilled tortilla loaded with melty cheese and choice of meat.</p>
+              </div>
+              <strong>$9.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Layered Nachos</h3>
+                <p>Crunchy chips, cheese, toppings, sauce and island flavor.</p>
+              </div>
+              <strong>$11.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Loaded Fries</h3>
+                <p>Crispy fries topped with cheese, sauce and optional protein.</p>
+              </div>
+              <strong>$8.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Mozzarella Sticks</h3>
+                <p>Classic crispy starter served hot and melty.</p>
+              </div>
+              <strong>$7.49</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="burgers">
+          <div class="menu-list">
+            <article class="menu-item">
+              <div>
+                <h3>Tropi Burger</h3>
+                <p>Juicy beef patty with lettuce, tomato, cheese and house sauce.</p>
+              </div>
+              <strong>$10.49</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Double Beach Burger</h3>
+                <p>Double patty, double cheese and a proper appetite requirement.</p>
+              </div>
+              <strong>$13.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>BBQ Island Burger</h3>
+                <p>Smoky-sweet BBQ style burger with crispy onions.</p>
+              </div>
+              <strong>$11.99</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="drinks">
+          <div class="menu-list">
+            <article class="menu-item">
+              <div>
+                <h3>Strawberry Frappe</h3>
+                <p>Cold, creamy and bright with fruity tropical sweetness.</p>
+              </div>
+              <strong>$5.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Vanilla Frappe</h3>
+                <p>Smooth blended classic for the sweet-tooth crowd.</p>
+              </div>
+              <strong>$5.49</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Margarita</h3>
+                <p>Frozen or on the rocks. Citrus, chill and beach energy.</p>
+              </div>
+              <strong>$8.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Daiquiri</h3>
+                <p>Refreshing frozen cocktail with a fun tropical kick.</p>
+              </div>
+              <strong>$8.49</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="specials">
+          <div class="menu-list">
+            <article class="menu-item">
+              <div>
+                <h3>Tropi Combo</h3>
+                <p>Any pita wrap, fries and a drink.</p>
+              </div>
+              <strong>$15.99</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Beach Snack Combo</h3>
+                <p>Quesadilla or nachos with a frappe.</p>
+              </div>
+              <strong>$14.49</strong>
+            </article>
+
+            <article class="menu-item">
+              <div>
+                <h3>Sunset Burger Combo</h3>
+                <p>Burger, fries and house drink for end-of-day cravings.</p>
+              </div>
+              <strong>$16.49</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Menu Categories</p>
+      <h2>Explore Tropi Greek</h2>
+      <p>From fresh wraps to loaded snacks and icy frappes, there’s something here for every craving.</p>
+    </div>
+
+    <div class="gallery-grid gallery-grid-five">
+      <div class="gallery-card gallery-a">
+        <span>Wraps</span>
+      </div>
+
+      <div class="gallery-card gallery-b">
+        <span>Frappes</span>
+      </div>
+
+      <div class="gallery-card gallery-c">
+        <span>Nachos / Pitadilla / Quesadilla</span>
+      </div>
+
+      <div class="gallery-card gallery-d">
+        <span>Salads</span>
+      </div>
+
+      <div class="gallery-card gallery-e">
+        <span>Burgers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">About Tropi Greek</p>
+          <h2>West side flavor with tropical soul</h2>
+          <p>
+            Tropi Greek is inspired by the west side of Puerto Rico, where beach
+            vibes, bold flavor and local energy come together. The concept blends
+            tropical comfort food with a light Greek-style twist for something
+            fresh, casual and memorable.
+          </p>
+          <p>
+            It’s the kind of place where you pull up hungry, leave happy, and start
+            planning your next order before you even hit the parking lot.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>What makes it different</h3>
+          <ul>
+            <li>Puerto Rican inspiration with Mediterranean influence</li>
+            <li>Soft pastel tropical branding and beach atmosphere</li>
+            <li>Comfort food, wraps, snacks and frozen drinks</li>
+            <li>Perfect for a future menu app or food ordering experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <p class="section-kicker">Contact</p>
+          <h2>Come catch the vibe</h2>
+          <p>Visit Tropi Greek in Aguadilla and enjoy tropical flavor with a Greek twist.</p>
+
+          <div class="contact-list">
+            <p>
+              <strong>Location:</strong>
+              <a
+                href="https://maps.app.goo.gl/B4uURozzpSMgaA9f9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Aguadilla, Puerto Rico
+              </a>
+            </p>
+            <p><strong>Phone:</strong> (863) 360-6475</p>
+            <p><strong>Email:</strong> norvakweb@gmail.com</p>
+            <p><strong>Hours:</strong> Mon - Sun • 11:00 AM - 10:00 PM</p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="tel:+18633606475" class="btn btn-primary">Call Now</a>
+            <a href="mailto:norvakweb@gmail.com" class="btn btn-secondary">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Tropi Greek. Tropical flavor with a Greek twist.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
