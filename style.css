@@ -448,37 +448,6 @@ ul {
   background: linear-gradient(135deg, #cde8ff, #d7f6ec);
 }
 
-.gallery-card span {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(6px);
-  padding: 0.7rem 1rem;
-  border-radius: 999px;
-}
-
-.gallery-a {
-  background: linear-gradient(135deg, #ffe9b6, #ffd3c2);
-}
-
-.gallery-b {
-  background: linear-gradient(135deg, #bdebe6, #d0e3ff);
-}
-
-.gallery-c {
-  background: linear-gradient(135deg, #ffd7df, #ffe9a7);
-}
-
-.gallery-d {
-  background: linear-gradient(135deg, #d6f4db, #fff0c3);
-}
-
-.gallery-e {
-  background: linear-gradient(135deg, #cde8ff, #d7f6ec);
-}
-
-.gallery-f {
-  background: linear-gradient(135deg, #ffd7c9, #fff4b3);
-}
-
 .about-grid,
 .contact-grid {
   display: grid;
@@ -520,6 +489,13 @@ ul {
   margin-top: 1rem;
 }
 
+.contact-list a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .site-footer {
   padding: 1.2rem 0 2rem;
 }
@@ -549,7 +525,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gallery-grid {
+  .gallery-grid-five {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -587,7 +563,8 @@ ul {
   .about-grid,
   .contact-grid,
   .card-grid,
-  .gallery-grid {
+  .gallery-grid,
+  .gallery-grid-five {
     grid-template-columns: 1fr;
   }
 
