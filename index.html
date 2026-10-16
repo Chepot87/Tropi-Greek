@@ -32,8 +32,7 @@
           <span class="logo-text">Tropi Greek</span>
         </a>
 
-        <button
-          class="nav-toggle"
+        <div class="language-switch" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" lang="es">ES</button><button type="button" data-lang="en" lang="en">EN</button></div><button class="nav-toggle"
           id="navToggle"
           aria-label="Toggle menu"
           aria-expanded="false"
@@ -46,9 +45,9 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="#home">Home</a></li>
           <li><a href="#featured">Featured</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Categories</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="menu.html" target="_blank" rel="noopener">Menu</a></li>
+
+          <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -68,7 +67,7 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="menu.html" target="_blank" rel="noopener" class="btn btn-primary">View Menu</a>
           <a href="#contact" class="btn btn-secondary">Visit Us</a>
         </div>
 
@@ -79,19 +78,7 @@
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="hero-card-inner">
-          <p class="mini-label">Popular picks</p>
-          <h2>Fresh, loaded, unforgettable</h2>
-
-          <ul>
-            <li>Chicken, steak and tripleta pita wraps</li>
-            <li>Layered nachos, pitadillas and quesadillas</li>
-            <li>Frappes, margaritas and daiquiris</li>
-            <li>Burgers, salads and house favorites</li>
-          </ul>
-        </div>
-      </div>
+      <div class="hero-visual"><img src="img/pita-pollo.png" alt="Chicken pita wrap from Tropi Greek" fetchpriority="high"><div class="hero-stamp">BORICUA SOUL.<br>GREEK TWIST.</div><a class="hero-photo-label" href="menu.html" target="_blank" rel="noopener">Chicken Pita Wrap <span>↗</span></a></div>
     </section>
   </header>
 
@@ -191,250 +178,10 @@
       </div>
     </section>
 
-    <!-- Menu -->
-    <section class="section menu-section" id="menu">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Full menu</p>
-          <h2>Real menu favorites</h2>
-          <p>Browse the main categories and some of the items people come back for.</p>
-        </div>
 
-        <div class="menu-tabs" id="menuTabs">
-          <button class="tab-btn active" data-category="wraps">Wraps</button>
-          <button class="tab-btn" data-category="snacks">Snacks</button>
-          <button class="tab-btn" data-category="burgers">Burgers</button>
-          <button class="tab-btn" data-category="drinks">Drinks</button>
-          <button class="tab-btn" data-category="specials">Specials</button>
-        </div>
 
-        <div class="menu-panel active" data-panel="wraps">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Chicken Pita Wrap</h3>
-                <p>Grilled chicken with fresh toppings and house sauce in warm pita.</p>
-              </div>
-              <strong>$10.99</strong>
-            </article>
+    <section class="section craving-section" id="cravings"><div class="container craving-grid"><div><p class="section-kicker">Find your flavor</p><h2>What are you craving?</h2><p>Pick your mood. Find your next favorite.</p><div class="craving-options" role="group" aria-label="Choose your craving"><button type="button" data-craving="wraps" aria-pressed="true">Something savory</button><button type="button" data-craving="snacks" aria-pressed="false">Made to share</button><button type="button" data-craving="drinks" aria-pressed="false">Cool me down</button></div></div><article class="craving-result" aria-live="polite"><img id="cravingImage" src="img/pita-pollo.png" alt="Chicken pita wrap from Tropi Greek" loading="lazy"><div><p class="section-kicker">Your next bite</p><h3 id="cravingTitle">Chicken Pita Wrap</h3><p id="cravingDescription">Grilled chicken, fresh toppings and house sauce wrapped in warm pita.</p><a class="btn btn-primary" id="cravingLink" href="menu.html" target="_blank" rel="noopener">See it on the menu ↗</a></div></article></div></section>
 
-            <article class="menu-item">
-              <div>
-                <h3>Steak Pita Wrap</h3>
-                <p>Seasoned steak, fresh vegetables and creamy garlic-style sauce.</p>
-              </div>
-              <strong>$12.49</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Tripleta Pita Wrap</h3>
-                <p>Puerto Rican-style tripleta flavor packed into a pita wrap.</p>
-              </div>
-              <strong>$13.49</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Pitadilla</h3>
-                <p>House-style pita folded with melty filling and bold flavor.</p>
-              </div>
-              <strong>$10.99</strong>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-panel" data-panel="snacks">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Layered Nachos</h3>
-                <p>Loaded nachos with toppings, cheese and house-made spicy red sauce.</p>
-              </div>
-              <strong>$11.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Quesadilla</h3>
-                <p>Golden grilled tortilla with melty cheese and your choice of filling.</p>
-              </div>
-              <strong>$9.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Pitadilla</h3>
-                <p>A local favorite with pita, filling and a crispy, satisfying bite.</p>
-              </div>
-              <strong>$10.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Loaded Fries</h3>
-                <p>Crispy fries topped with cheese, sauce and extra flavor.</p>
-              </div>
-              <strong>$8.99</strong>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-panel" data-panel="burgers">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Tropi Burger</h3>
-                <p>Juicy beef patty with lettuce, cheese and house flavor.</p>
-              </div>
-              <strong>$10.49</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Double Burger</h3>
-                <p>Double patty, double cheese and the kind of appetite it deserves.</p>
-              </div>
-              <strong>$13.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>House Burger Combo</h3>
-                <p>Burger served with fries for an easy go-to favorite.</p>
-              </div>
-              <strong>$16.49</strong>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-panel" data-panel="drinks">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Frappes</h3>
-                <p>Available in fruity and creamy flavors like Oreo, Nutella and more.</p>
-              </div>
-              <strong>$5.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Margarita</h3>
-                <p>Cold, citrusy and made for the menu’s bolder side.</p>
-              </div>
-              <strong>$8.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Daiquiri</h3>
-                <p>Frozen and refreshing with a smooth tropical finish.</p>
-              </div>
-              <strong>$8.49</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>House Drinks</h3>
-                <p>A rotating mix of refreshing options to pair with any meal.</p>
-              </div>
-              <strong>$3.99+</strong>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-panel" data-panel="specials">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Wrap Combo</h3>
-                <p>Any pita wrap served with fries and a drink.</p>
-              </div>
-              <strong>$15.99</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Snack Combo</h3>
-                <p>Quesadilla, pitadilla or nachos with a frappe or drink.</p>
-              </div>
-              <strong>$14.49</strong>
-            </article>
-
-            <article class="menu-item">
-              <div>
-                <h3>Burger Combo</h3>
-                <p>Burger, fries and drink for an easy full meal.</p>
-              </div>
-              <strong>$16.49</strong>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Categories -->
-    <section class="section gallery-section" id="gallery">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Menu Categories</p>
-          <h2>Explore Tropi Greek</h2>
-          <p>Five main categories that define the menu and the style of the spot.</p>
-        </div>
-
-        <div class="gallery-grid gallery-grid-five">
-          <div class="gallery-card gallery-a">
-            <span>Wraps</span>
-          </div>
-
-          <div class="gallery-card gallery-b">
-            <span>Frappes</span>
-          </div>
-
-          <div class="gallery-card gallery-c">
-            <span>Nachos / Pitadilla / Quesadilla</span>
-          </div>
-
-          <div class="gallery-card gallery-d">
-            <span>Salads</span>
-          </div>
-
-          <div class="gallery-card gallery-e">
-            <span>Burgers</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div>
-          <p class="section-kicker">About Tropi Greek</p>
-          <h2>Aguadilla flavor with its own identity</h2>
-          <p>
-            Tropi Greek brings together Puerto Rican favorites, Greek-inspired
-            touches and a menu built around wraps, snacks, burgers, salads and drinks
-            that people actually want to order.
-          </p>
-          <p>
-            It’s casual, colorful, flavorful and built to feel like a real local
-            spot, not a generic concept trying too hard to sound cool.
-          </p>
-        </div>
-
-        <div class="about-box">
-          <h3>What makes it different</h3>
-          <ul>
-            <li>Pita wraps, pitadillas, quesadillas and layered nachos</li>
-            <li>Frappes, margaritas, daiquiris and refreshing drinks</li>
-            <li>Greek-inspired touches mixed with Puerto Rican flavor</li>
-            <li>A menu built around real favorites people actually order</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
     <!-- Contact -->
     <section class="section contact-section" id="contact">
@@ -477,6 +224,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

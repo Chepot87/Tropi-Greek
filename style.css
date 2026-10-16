@@ -5,7 +5,7 @@
   --text: #25404a;
   --text-soft: #5d7882;
   --primary: #7fd8d1;
-  --primary-deep: #52c2b8;
+  --primary-deep: #257970;
   --secondary: #ffb8a6;
   --accent: #ffe29a;
   --mint: #c8f0dc;
@@ -16,6 +16,32 @@
   --radius-sm: 12px;
   --container: 1180px;
 }
+
+/* A stronger food-first composition, with the original tropical palette. */
+.language-switch { display:flex; gap:3px; padding:4px; border:1px solid var(--border); border-radius:999px; margin-left:auto; margin-right:1.5rem; }
+.language-switch button { border:0; background:transparent; color:var(--text); padding:.45rem .6rem; border-radius:999px; cursor:pointer; font-weight:700; }
+.language-switch button[aria-pressed="true"] { background:#25404a; color:white; }
+.hero-visual { position:relative; min-width:0; isolation:isolate; }
+.hero-visual > img { width:100%; height:520px; object-fit:cover; border-radius:120px 32px 32px 32px; box-shadow:var(--shadow); }
+.hero-stamp { position:absolute; top:24px; right:-12px; background:var(--accent); color:var(--text); padding:1.2rem; border-radius:50%; aspect-ratio:1; display:grid; place-content:center; font-weight:800; font-size:.85rem; line-height:1.3; transform:rotate(9deg); }
+.hero-photo-label { position:absolute; bottom:20px; left:20px; right:20px; background:rgba(255,255,255,.94); padding:1rem 1.2rem; border-radius:18px; font-weight:700; display:flex; justify-content:space-between; gap:1rem; }
+.craving-section { background:#25404a; color:#fffaf4; }
+.craving-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:3rem; align-items:center; }
+.craving-section h2 { font-size:clamp(2.2rem,4vw,3.8rem); letter-spacing:-.05em; line-height:1.04; margin:.8rem 0 1rem; }
+.craving-section .section-kicker { color:var(--primary); }
+.craving-options { display:flex; flex-wrap:wrap; gap:.65rem; margin-top:1.5rem; }
+.craving-options button { font:inherit; font-weight:600; cursor:pointer; border:1px solid #66828a; background:transparent; color:white; border-radius:999px; padding:.75rem 1rem; }
+.craving-options button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:var(--text); }
+.craving-result { overflow:hidden; background:#fffaf4; color:var(--text); border-radius:28px; display:grid; grid-template-columns:1fr 1fr; }
+.craving-result > img { width:100%; height:100%; min-height:320px; object-fit:cover; }
+.craving-result > div { padding:1.6rem; align-self:center; }
+.craving-result h3 { font-size:1.6rem; line-height:1.15; margin:.6rem 0; }
+.craving-result .section-kicker { color:#28766e; }
+.craving-result .btn { margin-top:1.2rem; font-size:.85rem; }
+:focus-visible { outline:3px solid #bd570b; outline-offset:4px; }
+@media(max-width:1000px) { .nav-menu { gap:.7rem; } .logo-text { display:none; } .craving-grid { grid-template-columns:1fr; } }
+@media(max-width:768px) { .hero-visual > img { height:380px; border-radius:64px 24px 24px; } .hero-stamp { right:8px; } .craving-result { grid-template-columns:1fr; } .craving-result > img { height:240px; min-height:0; } .language-switch { margin-right:1rem; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto!important; } *, *::before, *::after { transition:none!important; } }
 
 * {
   box-sizing: border-box;
@@ -75,12 +101,17 @@ ul {
 }
 
 .section-heading h2,
+.section-heading h1,
+.about-section h1,
 .about-section h2,
 .contact-card h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   margin: 0.6rem 0 1rem;
 }
+
+.subpage-header { padding-bottom: 0; }
+.nav-menu a[aria-current="page"] { color:var(--text); text-decoration:underline; text-underline-offset:6px; text-decoration-color:var(--primary-deep); }
 
 .section-heading p,
 .hero-text,
