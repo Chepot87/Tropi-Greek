@@ -326,8 +326,8 @@ window.tropiTranslations = [
     "Dinos tu mood. Encuentra tu próximo favorito."
   ],
   [
-    "Something savory",
-    "Algo salado"
+    "Something fresh",
+    "Algo fresco"
   ],
   [
     "Made to share",
